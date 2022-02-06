@@ -1,0 +1,35 @@
+// IMPORT NORMALIZE.CSS
+@import "../../node_modules/normalize.css/normalize.css";
+
+// IMPORT BOOTSTRAP REQUIRED MODULES
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// IMPORT BOOTSTRAP OPTIONAL MODULES
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+@import "./abstracts/abstracts";
+@import "./abstracts/mixins";
+@import "./abstracts/mediaqueries";
+
+@import "./base/base";
+
+@import "./components/btn";
+@import "./components/case-study";
+@import "./components/section-title";
+@import "./components/video";
+@import "./components/video-card";
+@import "./components/video-player";
+
+@import "./layout/navbar";
+
+@import "./sections/intro";
+@import "./sections/hero";
+@import "./sections/video-cards";
+@import "./sections/case-studies";
+@import "./sections/questions";
+
+@import "./utils/utils";

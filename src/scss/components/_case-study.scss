@@ -1,0 +1,76 @@
+.case-study {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 8rem;
+    align-items: flex-start;
+    justify-items: center;
+    align-content: center;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+
+  aside {
+    @include respond(tab-port) {
+      grid-row: 1 / 1;
+    }
+  }
+
+  blockquote {
+    font-style: italic;
+    margin: 4rem 0 2rem 0;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(2rem);
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .logo {
+    width: 30%;
+    margin-bottom: 2rem;
+
+    @include respond(tab-port) {
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .video-wrapper {
+    width: 100%;
+  }
+
+  h3 {
+    margin-bottom: 2rem;
+
+    @include respond(tab-port) {
+      text-align: center;
+    }
+  }
+
+  .case-study-hr {
+    margin: 3rem 0 5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .btn {
+    @include respond(tab-port) {
+      margin-left: 50%;
+      transform: translateX(-50%);
+      width: max-content;
+      margin-top: 2rem;
+    }
+  }
+}

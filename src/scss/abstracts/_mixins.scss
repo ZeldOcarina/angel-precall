@@ -1,0 +1,8 @@
+@mixin container($margin-top, $margin-bottom) {
+  width: $section-width;
+  margin: #{$margin-top} auto #{$margin-bottom};
+
+  @include respond(tab-land) {
+    width: 80%;
+  }
+}

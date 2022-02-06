@@ -1,0 +1,30 @@
+.questions {
+  @include respond(tab-port) {
+    padding: 7rem 0;
+  }
+
+  .questions-container {
+    display: flex;
+    grid-gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include respond(phone-port) {
+      grid-template-columns: 1fr;
+    }
+
+    .question-box {
+      width: 60rem;
+
+      .question {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .answer {
+        font-size: 1.8rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}

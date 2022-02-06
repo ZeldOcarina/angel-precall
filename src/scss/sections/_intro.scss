@@ -1,0 +1,17 @@
+.intro {
+  ul {
+    width: 50%;
+    margin: 4rem auto 0 auto;
+
+    @include respond(phone-port) {
+      width: 100%;
+      list-style: inside;
+    }
+
+    li {
+      @include respond(phone-port) {
+        margin: 1rem 0;
+      }
+    }
+  }
+}

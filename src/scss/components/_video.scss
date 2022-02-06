@@ -1,0 +1,57 @@
+.video {
+  width: 50%;
+  margin: 0 auto;
+
+  @include respond(laptop) {
+    width: 65%;
+  }
+
+  @include respond(phone-port) {
+    width: 90%;
+    padding: 4rem 0 0 0;
+  }
+  @include respond(iphone-5) {
+    width: 90%;
+    padding: 0 0 0 0;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+    font-weight: 600;
+  }
+
+  &__paragraph {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 1.8rem;
+  }
+
+  &__thumb-container {
+    position: relative;
+    margin-bottom: 5rem;
+  }
+
+  &__thumbnail {
+    width: 100%;
+  }
+
+  &__play-icon {
+    width: 8rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease-in-out;
+
+    @include respond(phone-port) {
+      width: 6rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+      transform: translate(-50%, -50%) scale(1.05);
+    }
+  }
+}

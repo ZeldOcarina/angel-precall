@@ -1,0 +1,29 @@
+.hero {
+  padding-top: 2rem;
+  text-align: center;
+
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  .video-wrapper {
+    width: 55%;
+    @include respond(phone-port) {
+      width: 100% !important;
+    }
+  }
+
+  .text-container {
+    width: 70%;
+    margin: 4rem auto 0 auto;
+
+    @include respond(phone-port) {
+      width: 100%;
+    }
+
+    p {
+      margin: 1.5rem 0;
+    }
+  }
+}

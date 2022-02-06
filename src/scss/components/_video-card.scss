@@ -1,0 +1,57 @@
+.video-card {
+  box-shadow: var(--cards-shadow);
+  border-radius: 10px;
+
+  @include respond(tab-port) {
+    width: calc(50% - 3rem);
+    margin: 0 auto;
+  }
+
+  @include respond(phone-port) {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .video-wrapper {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .bottom-container {
+    padding: 0 4rem 4rem 4rem;
+  }
+  h5 {
+    font-size: 2rem;
+  }
+  .content {
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+
+    &--li {
+      margin: 1rem 0;
+      text-align: left;
+    }
+  }
+
+  ul {
+    list-style: inside;
+    padding: 0;
+  }
+
+  &__thumb {
+    .video__thumb-container {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      margin: 0;
+
+      .video__thumbnail {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .video__play-icon {
+        width: 5rem;
+      }
+    }
+  }
+}

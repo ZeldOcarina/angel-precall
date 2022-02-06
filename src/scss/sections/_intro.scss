@@ -4,8 +4,9 @@
     margin: 4rem auto 0 auto;
 
     @include respond(phone-port) {
-      width: 100%;
+      width: 80%;
       list-style: inside;
+      padding: 0;
     }
 
     li {

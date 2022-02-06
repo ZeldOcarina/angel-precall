@@ -10,4 +10,11 @@
     margin: 1rem 0;
     text-align: center;
   }
+
+  p {
+    @include respond(phone-port) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
 }

@@ -11,6 +11,10 @@
   .auto-resizable-iframe {
     width: 55%;
     margin: 0px auto;
+
+    @include respond(phone-port) {
+      width: 100%;
+    }
   }
 
   .auto-resizable-iframe > div {
@@ -33,6 +37,10 @@
     right: 10rem;
     width: 4rem;
     transition: transform 0.3s ease-in-out;
+
+    @include respond(phone-port) {
+      right: 5rem;
+    }
 
     &:hover {
       cursor: pointer;

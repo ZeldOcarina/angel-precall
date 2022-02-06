@@ -2,8 +2,12 @@
   box-shadow: var(--cards-shadow);
   border-radius: 10px;
 
+  @include respond(tab-land) {
+    width: 70rem;
+    margin: 0 auto;
+  }
   @include respond(tab-port) {
-    width: calc(50% - 3rem);
+    width: calc(70% - 3rem);
     margin: 0 auto;
   }
 

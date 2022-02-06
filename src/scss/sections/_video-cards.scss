@@ -17,7 +17,7 @@
     gap: 3rem;
     margin-bottom: 6rem;
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       grid-template-columns: 1fr;
     }
   }
